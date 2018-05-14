@@ -8,7 +8,7 @@
 		<h1>My first PHP page</h1>
 
 		<?php
-			echo "Hola, Ramis!";
+			echo "Hola, NetBeans!";
 		?>
 
 	</body>

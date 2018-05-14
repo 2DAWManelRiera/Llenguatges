@@ -9,7 +9,7 @@
 			double num = Math.random();
 			if (num > 0.95) {
 		%>
-				<h2>Hola, Ramis!</h2>
+				<h2>Hola, NetBeans!</h2>
 		<$
 			} else {
 		%>

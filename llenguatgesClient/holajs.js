@@ -1,2 +1,2 @@
-document.write ("<h3>Hola, Ramis!</h3>");
+document.write ("<h3>Hola, NetBeans!</h3>");
 

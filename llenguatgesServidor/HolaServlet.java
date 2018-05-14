@@ -1,23 +1,29 @@
+package llenguatgesServidor;
+
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class HolaServlet extends HttpServlet {
 	@Override
-	public void doGet (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	public void doGet (HttpServletRequest request,
+                    HttpServletResponse response) throws IOException,
+                                                            ServletException {
 		// Set the response message's MIME type
 		response.setContentType("text/html;charset=UTF-8");
-		// Allocate a output writer to write the response missage into the network socket
+		// Allocate a output writer to write the response missage into
+                //                                          the network socket
 		PrintWriter out = response.getWriter();
 		
 		// Write the response message, in an HTM page
 		try {
 			out.println("<!DOCTYPE html");
 			out.println("<html><head>");
-			out.println("<neta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+			out.println("<neta http-equiv='Content-Type'" +
+                                    "content='text/html; charset=UTF-8' />");
 			out.println("<title>Hola!</title></head>");
 			out.println("<body>");
-			out.println("<h3>Hola, Ramis!</h3>"); // Escriu "Hola, Ramis!"
+			out.println("<h3>Hola, NetBeans!</h3>");
 			out.println("</body>");
 			out.println("</html>");
 		} finally {
@@ -25,3 +31,4 @@ public class HolaServlet extends HttpServlet {
 		}
 	}
 }
+
